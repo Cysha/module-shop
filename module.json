@@ -1,0 +1,23 @@
+{
+    "name": "Shop",
+    "alias": "shop",
+    "description": "Shop Module for Phoenix CMS",
+    "authors": [
+        { "name": "xLink (Dan Aldridge)", "email": "xLink@cybershade.org" }
+    ],
+    "keywords": [
+    ],
+    "version": "v1.0.0",
+    "active": 0,
+    "order": 10,
+    "providers": [
+        "Cms\\Modules\\Shop\\Providers\\ShopModuleServiceProvider",
+        "Cms\\Modules\\Shop\\Providers\\ShopEventsProvider",
+        "Cms\\Modules\\Shop\\Providers\\ShopRoutingProvider"
+    ],
+    "aliases": {
+    },
+    "files": [
+        "helpers.php"
+    ]
+}
