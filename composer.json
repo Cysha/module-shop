@@ -1,5 +1,5 @@
 {
-    "name": "Cysha/Shop",
+    "name": "Cysha/module-shop",
     "type": "pxcms-module",
     "description": "Shop Module for PhoenixCMS",
     "license": "MIT",
