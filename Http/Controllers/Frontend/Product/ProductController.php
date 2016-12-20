@@ -17,6 +17,7 @@ class ProductController extends BaseController
     {
         return $this->setView('frontend.product.view', [
             'product' => $product,
+            'attributes' => [],
         ]);
     }
 }

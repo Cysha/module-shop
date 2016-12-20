@@ -51,12 +51,12 @@ class ShopRoutingProvider extends CmsRoutingProvider
         });
 
         Route::bind('shop_product_id', function ($id) {
-            return Product::with(['categories'])
+            return Product::with(['categories', 'attributes', 'attributes.attribute'])
                 ->findOrFail($id);
         });
 
         Route::bind('shop_product_slug', function ($slug) {
-            return Product::with(['categories'])
+            return Product::with(['categories', 'attributes', 'attributes.attribute'])
                 ->where('slug', $slug)
                 ->firstOrFail();
         });

@@ -31,11 +31,12 @@ class Product extends BaseModel
 
     /*public function image(){
         return $this->hasMany(ProductImage::class);
-    }
-
-    public function attributes(){
-        return $this->hasMany(AttributeValue::class);
     }*/
+
+    public function attributes()
+    {
+        return $this->hasMany(ProductAttribute::class);
+    }
 
     public function getPriceAttribute($price)
     {
@@ -55,10 +56,6 @@ class Product extends BaseModel
                 'self' => (string) $this->makeLink(false),
                 'href' => (string) $this->makeLink(true),
             ],
-
-            'author' => [],
-            'category' => [],
-            'latestPost' => [],
         ];
 
         return $return;

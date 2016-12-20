@@ -32,9 +32,9 @@ class ShopCreateAttributeTables extends Migration
             $table->string('name', 45);
             $table->string('data_type', 45)->default('string');
             $table->integer('order')->default(0);
-            $table->integer('is_frontend')->default(0);
-            $table->integer('is_required')->default(0);
-            $table->integer('price_calc')->default(0);
+            $table->boolean('is_frontend')->default(0);
+            $table->boolean('is_required')->default(0);
+            $table->boolean('price_calc')->default(0);
 
             $table->timestamps();
         });
