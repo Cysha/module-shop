@@ -10,7 +10,7 @@
     "require": {
         "composer/installers" : "dev-master",
 
-        "noeldavies/product-price-calculator": "dev-master"
+        "cysha/product-price-calculator": "dev-master"
     },
     "repositories": [
         { "type": "vcs", "url": "https://github.com/cysha/installers" }
