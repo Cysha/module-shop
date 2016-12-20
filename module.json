@@ -3,12 +3,14 @@
     "alias": "shop",
     "description": "Shop Module for Phoenix CMS",
     "authors": [
-        { "name": "xLink (Dan Aldridge)", "email": "xLink@cybershade.org" }
+        { "name": "xLink (Dan Aldridge)", "email": "xLink@cybershade.org" },
+        { "name": "Jesus (Daniel Noel-Davies)", "email": "jesus@cybershade.org" }
     ],
     "keywords": [
+        "first-party"
     ],
     "version": "v1.0.0",
-    "active": 0,
+    "active": 1,
     "order": 10,
     "providers": [
         "Cms\\Modules\\Shop\\Providers\\ShopModuleServiceProvider",

@@ -1,20 +1,20 @@
-<?php namespace Cms\Modules\Shop\Database\Seeders;
+<?php
 
-use Illuminate\Database\Seeder;
+namespace Cms\Modules\Shop\Database\Seeders;
+
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Seeder;
 
 class ShopDatabaseSeeder extends Seeder
 {
     /**
      * Run the database seeds.
-     *
-     * @return void
      */
     public function run()
     {
         Model::unguard();
 
-        //$this->call(__NAMESPACE__.'\');
+        $this->call(CategorySeeder::class);
+        $this->call(ProductsSeeder::class);
     }
-
 }
